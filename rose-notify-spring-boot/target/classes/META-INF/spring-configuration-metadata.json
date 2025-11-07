@@ -1,0 +1,56 @@
+{
+  "groups": [
+    {
+      "name": "rose.notify",
+      "type": "io.github.rosestack.spring.boot.notify.config.NotifyProperties",
+      "sourceType": "io.github.rosestack.spring.boot.notify.config.NotifyProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "rose.notify.executor-core-size",
+      "type": "java.lang.Integer",
+      "description": "线程池大小（用于 sendAsync \/ 批量）",
+      "sourceType": "io.github.rosestack.spring.boot.notify.config.NotifyProperties"
+    },
+    {
+      "name": "rose.notify.retryable",
+      "type": "java.lang.Boolean",
+      "description": "是否开启 Sender 层重试包装",
+      "sourceType": "io.github.rosestack.spring.boot.notify.config.NotifyProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "rose.notify.sender-cache-expire-after-access-seconds",
+      "type": "java.lang.Long",
+      "description": "发送器缓存访问过期（秒）",
+      "sourceType": "io.github.rosestack.spring.boot.notify.config.NotifyProperties",
+      "defaultValue": 1800
+    },
+    {
+      "name": "rose.notify.sender-cache-max-size",
+      "type": "java.lang.Long",
+      "description": "发送器缓存最大容量",
+      "sourceType": "io.github.rosestack.spring.boot.notify.config.NotifyProperties",
+      "defaultValue": 1000
+    },
+    {
+      "name": "rose.notify.sms-provider-cache-expire-after-access-seconds",
+      "type": "java.lang.Long",
+      "description": "短信服务商缓存访问过期（秒）",
+      "sourceType": "io.github.rosestack.spring.boot.notify.config.NotifyProperties",
+      "defaultValue": 1800
+    },
+    {
+      "name": "rose.notify.sms-provider-cache-max-size",
+      "type": "java.lang.Long",
+      "description": "短信服务商缓存最大容量",
+      "sourceType": "io.github.rosestack.spring.boot.notify.config.NotifyProperties",
+      "defaultValue": 1000
+    }
+  ],
+  "hints": [],
+  "ignored": {
+    "properties": []
+  }
+}
